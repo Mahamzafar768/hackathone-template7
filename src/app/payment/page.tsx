@@ -35,7 +35,7 @@ export default function Home() {
             </h1>
           </Link>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {[...Array(4)].map((_, index) => (
             <Card
               key={index}
@@ -62,10 +62,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Recommendation Cars Section */}
+      {/* Recommended Cars Section */}
       <section className="w-full flex flex-col gap-4">
         <h1 className="text-gray-500 text-lg sm:text-xl">Recommended Cars</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {[...Array(8)].map((_, index) => (
             <Card
               key={index}
@@ -95,7 +95,9 @@ export default function Home() {
       {/* Show More Section */}
       <section className="w-full text-center">
         <Link href="/categories">
-          <button className="bg-[#3563e9] px-4 py-2 text-white rounded-md mt-5">Show More Cars</button>
+          <button className="bg-[#3563e9] px-4 py-2 text-white rounded-md mt-5">
+            Show More Cars
+          </button>
         </Link>
       </section>
     </div>
